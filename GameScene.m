@@ -1265,7 +1265,7 @@
 				[sceneTileMap renderLayer:1 
 									  mapx:playerTileX - leftOffsetInTiles - 1 
 									  mapy:playerTileY - bottomOffsetInTiles - 1 
-									 width:screenTilesWide + 4
+									 width:screenTilesWide + 2
 									height:screenTilesHeight + 2 
 							   useBlending:NO];
 								
@@ -1306,8 +1306,8 @@
 				[sceneTileMap renderLayer:3
 									  mapx:playerTileX - leftOffsetInTiles - 1
 									  mapy:playerTileY - bottomOffsetInTiles - 1
-									 width:screenTilesWide + 4
-									height:screenTilesHeight + 2
+									 width:screenTilesWide + 1
+									height:screenTilesHeight + 1
 							   useBlending:NO];
 				if(player.state == kEntityState_Alive || player.state == kEntityState_Attack || player.state == kEntityState_Sleep)
 					for(AbstractEntity *entity in damageText){

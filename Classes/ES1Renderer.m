@@ -144,7 +144,7 @@
 	// Rotate the OpenGL model view to the left 90 degrees so that everything is rendered in landscape
 	// mode
 
-	glTranslatef(screenBounds.size.height, screenBounds.size.width -120, 0);
+	glTranslatef(screenBounds.size.height, screenBounds.size.width, 0);
 	glRotatef(-90, 0, 0, 1);
 	glTranslatef((screenBounds.size.width)* -1,screenBounds.size.height * -1,0);
 	

@@ -12,8 +12,6 @@
 #import "SoundManager.h"
 #import "GameController.h"
 #import "GameScene.h"
-#import <Fabric/Fabric.h>
-#import <Crashlytics/Crashlytics.h>
 
 #pragma mark -
 #pragma mark Private interface
@@ -63,7 +61,6 @@
 	[glView startAnimation];
 }
 - (BOOL) application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Fabric with:@[ CrashlyticsKit]];
     [self applicationDidFinishLaunching:application];
     return YES;
 }

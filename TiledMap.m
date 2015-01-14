@@ -125,8 +125,10 @@
 
 			// If the TexturedColoredQuad returned is not the same as the nullTCQ then it is populated
             // and we can add it to the render quque.
-			if (memcmp(tcq, &nullTCQ, sizeof(TexturedColoredQuad)) != 0)
+            
+            if (memcmp(tcq, &nullTCQ, sizeof(TexturedColoredQuad)) != 0) {
 				[sharedImageRenderManager addTexturedColoredQuadToRenderQueue:tcq texture:textureName];
+            }
 		}
     }
 }
